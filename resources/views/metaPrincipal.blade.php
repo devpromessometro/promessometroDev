@@ -6,41 +6,39 @@
     <title>Meta Page</title>
 </head>
 <body>
-    <section style="margin-top: 83px; ">
-        <div class="middle-cadastra">
-            <div class="middlecenter-cadastra text-center">
-                <h1 class="h1seguidas" >Minhas Metas</h1><br><br>
+    <section>
+            <div class="middlecenter-cadastra">
+                <h1 class="titulo promeblue" >Minhas Metas</h1><br><br>
                 <div class="container">
                     <form action="consultar" method="post" class="seguidas">
                         <div class="col-md-1"></div>
-                        <div class="col-md-8">
-                            <div class="col-md-2" style="font-family: Agency FB; font-size: 22px;">Tema</div>
-                            <div class="col-md-3" style="font-family: Agency FB; font-size: 22px;">Objetivo</div>
-                            <div class="col-md-1" style="font-family: Agency FB; font-size: 22px;" style="padding: 0px;">%</div>
-                            <div class="col-md-2" style="font-family: Agency FB; font-size: 22px;">Responsável</div>
-                            <div class="col-md-2" style="font-family: Agency FB; font-size: 22px;">Data Início</div>
-                            <div class="col-md-2" style="font-family: Agency FB; font-size: 22px;">Data Fim</div>
+                        <div class="col-md-8" style="text-align: center;">
+                            <div class="col-md-2 subtitulo3 promeblue">Tema</div>
+                            <div class="col-md-3 subtitulo3 promeblue">Objetivo</div>
+                            <div class="col-md-1 subtitulo3 promeblue" style="padding: 0px;">%</div>
+                            <div class="col-md-2 subtitulo3 promeblue">Responsável</div>
+                            <div class="col-md-2 subtitulo3 promeblue">Data Início</div>
+                            <div class="col-md-2 subtitulo3 promeblue">Data Fim</div>
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
-                            <div class="col-md-6" style="font-family: Agency FB; font-size: 22px;">Alterar</div>
-                            <div class="col-md-6" style="font-family: Agency FB; font-size: 22px;">Excluir</div>
+                            <div class="col-md-6 subtitulo3 promeblue">Alterar</div>
+                            <div class="col-md-6 subtitulo3 promeblue">Excluir</div>
                         </div>
-                        <div class="col-md-12"><hr></div>
+                        <div class="col-md-12"><hr class="gradient-line"></div>
                     </form>
 
                     @foreach ($meta as $aux)
                     <form action="meta/atualizar" method="post">
-                        <div style="word-wrap: break-word;">
                             <div class="col-md-1"><img src="img/lupa-green.png"></div>
                             <div class="col-md-8">
                                 <input type = "hidden" name="ID_META" value="{{ $aux->ID_META }}">
-                                <div class="col-md-2" style="font-family: Adobe Devanagari; font-size: 15px;">{{ $aux->ID_TEMA }}</div>
-                                <div class="col-md-3" style="font-family: Adobe Devanagari; font-size: 15px;">{{ $aux->OBJETIVO }}</div>
-                                <div class="col-md-1" style="font-family: Adobe Devanagari; font-size: 15px;" style="padding: 0px;">100,0</div>
-                                <div class="col-md-2" style="font-family: Adobe Devanagari; font-size: 15px;">{{ $aux->ID_GESTAO }}</div>
-                                <div class="col-md-2" style="font-family: Adobe Devanagari; font-size: 15px;">{{ $aux->DATA_INICIO }}</div>
-                                <div class="col-md-2" style="font-family: Adobe Devanagari; font-size: 15px;">{{ $aux->DATA_FIM }}</div>
+                                <div class="col-md-2 texto">{{ $aux->ID_TEMA }}</div>
+                                <div class="col-md-3 texto">{{ $aux->OBJETIVO }}</div>
+                                <div class="col-md-1 texto">100,0</div>
+                                <div class="col-md-2 texto">{{ $aux->ID_GESTAO }}</div>
+                                <div class="col-md-2 texto">{{ $aux->DATA_INICIO }}</div>
+                                <div class="col-md-2 texto">{{ $aux->DATA_FIM }}</div>
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             </div>
                             <div class="col-md-1"><img src="img/owner.png"></div>
@@ -53,12 +51,10 @@
                                 </button></div>
                             </div>
                             <div class="col-md-12">
-                                <hr>
+                                <hr class="gradient-line">
                             </div>
-                        </div>
                     </form>
                     @endforeach
-                    <div style="word-wrap: break-word;">
                         <div class="col-md-1"><img src="img/lupa-yellow.png"></div>
                         <div class="col-md-8">
                             <div class="col-md-2">testeamarelo</div>
@@ -78,9 +74,8 @@
                             </button></div>
                         </div>
                         <div class="col-md-12">
-                            <hr>
+                            <hr class="gradient-line">
                         </div>
-                    </div>
                     <div style="word-wrap: break-word;">
                         <div class="col-md-1"><img src="img/lupa-red.png"></div>
                         <div class="col-md-8">
@@ -109,7 +104,6 @@
                 <input type="submit" value="Voltar" class="btn-primary btn-pad" onclick="location.href= '/promessometro/public'">
                 <br>
             </div>
-        </div>
     </section>
 </body>
 </html>

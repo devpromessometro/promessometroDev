@@ -12,15 +12,16 @@
         <link href="css/dashboard.css" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo asset('css/style.css')?>" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
         
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery.circliful.min.js"></script>
+
     </head>  
     <body>
-       @show
+     @show
 
-       <nav class="navbar navbar-inverse navbar-fixed-top" style="padding: 0px;
-       margin:0px; font-family: agency FB;">
-       <div class="container" style="margin-top: 10px;">
+     <nav class="navbar navbar-inverse navbar-fixed-top agencyfb p-m-null">
+     <div class="container navbartop-m">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -31,26 +32,26 @@
             <a class="navbar-brand" href="/promessometro/public">Promessômetro</a>
         </div>
         <div id="navbar1" class="navbar-collapse collapse navbar-right">
-            <ul class="nav navbar-nav" style="display: block;">
+            <ul class="nav navbar-nav">
                 <section>
-                    <div style="float:left;margin-right:20px;">
+                    <div class="formlogin">
                         <li>
-                            <label for="usuario" style="font-size: 18px;">Login
+                            <label for="usuario">Login
                                 <input type="text" id="usuario" name="usuario"></input>
                             </label>
                         </li>
                     </div>
-                    <div style="float:left;margin-right:20px;">
+                    <div class="formlogin">
                         <li>
-                            <label for="senha" style="font-size: 18px;">Senha
+                            <label for="senha">Senha
                                 <input type="text" id="senha" name="senha"></input>
                             </label>
                         </li>
                     </div>
-                    <div style="float:left;margin-right:20px;">
+                    <div class="formlogin">
                         <li>
-                            <button class="btn btn-primary btn-sm" style="font-size: 15px;">Login</button>
-                            <button class="btn btn-default btn-sm" style="font-size: 15px;">Cadastre-se</button>
+                            <button class="btn btn-primary btn-sm navbar-btn-fontsize">Login</button>
+                            <button class="btn btn-default btn-sm navbar-btn-fontsize">Cadastre-se</button>
                         </li>
                     </div>
                 </section>
@@ -58,10 +59,10 @@
         </div>
     </div>
     <div class="second-div">
-        <a href="#" style="font-size: 21px;"> Quem Somos</a><a style="font-size: 21px;">|</a>
-        <a href="#" style="font-size: 21px;"> Blog Tô de Olho</a><a style="font-size: 21px;">|</a>
-        <a href="#" style="font-size: 21px;"> Parceiros</a><a style="font-size: 21px;">|</a>
-        <a href="#" style="font-size: 21px;"> Contato</a>
+        <a href="#"> Quem Somos</a><a>|</a>
+        <a href="#"> Blog Tô de Olho</a><a>|</a>
+        <a href="#"> Parceiros</a><a>|</a>
+        <a href="#"> Contato</a>
     </div>
 </nav>
 <footer>
@@ -92,7 +93,7 @@
                 </div>
             </div>
             <br><br><br>
-            <p class="pull-left" style="color: #C8C8C8;"><b>Promessômetro © 2016 | auditoria cidadã</b> e avaliação de sustentabilidade da gestão municipal</p>
+            <p class="pull-left direitosautorais"><b>Promessômetro © 2016 | auditoria cidadã</b> e avaliação de sustentabilidade da gestão municipal</p>
         </div>
     </div>
 </footer>

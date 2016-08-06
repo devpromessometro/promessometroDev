@@ -124,3 +124,19 @@ Route::get('/prestacaoprojeto/cadastrar', function (){
 Route::post('/prestacaoprojeto/cadastrar', 'PrestacaoProjetoController@cadastrar');
 Route::get('/prestacaoprojeto/consultar', 'PrestacaoProjetoController@consultar');
 Route::post('/prestacaoprojeto/consultar', 'PrestacaoProjetoController@atualizar');
+
+Route::get('/cadastrousuario', function (){
+    return view('cadastro1');
+});
+
+Route::get('cadastrocidade', function (){
+    return view('cadastro2');
+});
+
+Route::get('cadastrogestao', function (){
+    return view('cadastro3');
+});
+
+Route::get('cadastrometaacao', function (){
+    return view('cadastro4');
+});

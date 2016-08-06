@@ -10,7 +10,7 @@
     <section style="margin-top: 83px;">
         <div class="middle-cadastra">
             <div class="middlecenter-cadastra text-center">
-                <h1>PROMESSÔMETRO NACIONAL</h1>
+                <h1 class="promeblue">PROMESSÔMETRO NACIONAL</h1>
                 <div class="row" style="padding: 20px;">
                 <div class="col-md-2"></div>
                 <div class="col-md-4">
