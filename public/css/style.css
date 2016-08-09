@@ -223,16 +223,26 @@ q::after {
     color: #fff;
     text-align: center;
 }
-/*--------------------------------------FELIPE----------------------------------------*/
 
 .middlecenter-cadastra{ /*"MOLDURA" das páginas*/
     list-style-type: none;
-    padding: 30px; 
     background-color: white;
     padding-top: 130px;
     padding-right: 50px;
     padding-left: 50px;
+    padding-bottom: 30px;
 }
+
+.cadastra-stepline{ /*"MOLDURA" das páginas que contém stepline*/
+    list-style-type: none;
+    background-color: white;
+    padding-top: 82px;
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    margin:auto;
+}
+
 /*Tipos de listas*/
 .nostyle-list{ /*Lista sem estilo, apenas com as opções enfileiradas*/
     list-style: none;
@@ -242,7 +252,7 @@ q::after {
 
 /*Linhas de separação*/
 
-.rightline:before,  /*Linha à direita (Vertical)*/
+.rightline:before,  /*Linha à direita (Vertical) gradiente -azul claro/azul escuro-*/
 .rightline:after {
   content: "";
   position: absolute;
@@ -280,6 +290,12 @@ q::after {
     padding-left: 50px;
     margin: 0px;
 }
+
+.formatacao-telas-cadastro{
+    padding: 25px;
+    min-height: 400px;
+    max-height: auto;
+}
 /*---------------------------*/
 
 /*Design de algumas partes da tela de Metas Detalhadas*/
@@ -311,14 +327,17 @@ div.selecao-tema{
 
 /*Tipos de input*/
 .inputnormal-color-bg{ /*Campo de preenchimento (input) com background colorido*/
+    padding:5px;
     border-radius: 5px;
     border-color: transparent !important;
+    height: 29px;
 }
 
 .inputnormal{ /*Campo de preenchimento (input) normal*/
-    height:150px; 
-    width:480px;
+    height:30px; 
+    width:450px;
     border-radius:5px; 
+    padding:5px;
     border: 1px #A9A9A9 solid;
 }
 
@@ -326,6 +345,23 @@ div.selecao-tema{
     height: 30px;
     width:250px; 
     border-radius:5px; 
+    padding:5px;
+    border: 1px #A9A9A9 solid; 
+}
+
+.smallinputlist{
+    height: 30px;
+    width:190px; 
+    border-radius:5px; 
+    padding:5px;
+    border: 1px #A9A9A9 solid; 
+}
+
+.s-inputnormal{
+    height: 30px;
+    width:250px; 
+    border-radius:5px; 
+    padding:5px;
     border: 1px #A9A9A9 solid; 
 }
 
@@ -333,6 +369,23 @@ div.selecao-tema{
     height:150px; 
     width:450px;
     border-radius:5px; 
+    padding:5px;
+    border: 1px #A9A9A9 solid;
+}
+
+.smallinput{ /*Campo de preenchimento (input) normal*/
+    height:30px; 
+    width:350px;
+    border-radius:5px; 
+    padding:5px;
+    border: 1px #A9A9A9 solid;
+}
+
+.verysmallinput{ /*Campo de preenchimento (input) normal*/
+    height:30px; 
+    width:100px;
+    border-radius:5px; 
+    padding:5px;
     border: 1px #A9A9A9 solid;
 }
 /*-----------------------*/
@@ -378,6 +431,7 @@ div.selecao-tema{
 
 .input{
     font-family: Adobe Devanagari;
+    font-size: 17px;
 }
 
 .centralizafonte{

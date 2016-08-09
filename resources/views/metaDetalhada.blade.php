@@ -27,10 +27,8 @@
               <li><img src="img/lupa-yellow.png">Ação C</li>
               <li><img src="img/lupa-red.png">Ação D</li>
             </ul>
-
             <button class="btn btn-info btn-lg">Seguir Meta</button>
           </div>
-
           <div class="col-md-12">
             <hr class="gradient-line">
           </div>
@@ -38,7 +36,7 @@
         <div class="col-md-6">
           <div class="selecao-tema">
             <li>Selecione o tema desejado:
-              <input class="inputnormal-color-bg" type="text" name="option" list="exampleList"></li>
+              <input class="inputnormal-color-bg input" type="text" name="option" list="exampleList"></li>
               <datalist id="exampleList">
                 <option>Saude</option>
                 <option >Educacao</option>
@@ -46,7 +44,6 @@
                 <option >Lazer</option>
               </datalist>
             </div>
-
             <div class="col-md-12">
               <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:50px; height:350px">
                 <!-- Indicators -->
@@ -56,7 +53,6 @@
                   <li data-target="#myCarousel" data-slide-to="2"></li>
                   <li data-target="#myCarousel" data-slide-to="3"></li>
                 </ol>
-
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
@@ -89,7 +85,6 @@
             </div >
           </div>
         </div>
-        
         <div class="row">
           <div class="col-md-6">
             <h1 class="subtitulo subtitulo-barra promeblue"> Ações da Meta:</h1>
@@ -100,7 +95,7 @@
                 <P class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula augue ac egestas ornare. 
                   Nulla sollicitudin porttitor tempus. Integer bibendum dolor et justo finibus, ut condimentum nunc pharetra.</P>
                   <div class="accordion-content">
-                    <div class="col-md-12 centralizafonte">
+                    <div class="col-md-12 justificafonte">
                       <div class="col-md-2" >
                         <P class="subtitulo3 promeblue">Status</P>
                       </div>
@@ -158,7 +153,7 @@
                 </div>
               <hr class="gradient-line">
               <img src="img/comment.png">
-              <input class="inputtext" placeholder="Escreva aqui seu comentario">
+              <input class="inputtext input" placeholder="Escreva aqui seu comentario">
             </div>
           </div>  
         </div>

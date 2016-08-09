@@ -29,7 +29,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/promessometro/public">Promessômetro</a>
+            <a class="navbar-brand" href="/promessometro/public"></a>
         </div>
         <div id="navbar1" class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">

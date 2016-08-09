@@ -140,3 +140,7 @@ Route::get('cadastrogestao', function (){
 Route::get('cadastrometaacao', function (){
     return view('cadastro4');
 });
+
+Route::get('cadastro', function (){
+    return view('cadastro');
+});
